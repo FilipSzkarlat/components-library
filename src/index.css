@@ -62,3 +62,45 @@ body {
   background-color: #FCE7F3;
   color: #9D174D;
 }
+
+.banner {
+  padding: .75em 1.5em;
+  gap: .75em;
+  border-radius: .5em;
+  margin: 2em;
+  display: flex;
+}
+
+.banner .icon {
+  width: 1em;
+  height: 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.banner.success {
+  background-color: #ECFDF5;
+  color: #047857;
+}
+
+.banner.error {
+  background-color: #FEF2F2;
+  color: #B45309;
+}
+
+.banner.warning {
+  background-color: #FFFBEB;
+  color: #B45309;
+}
+
+.banner.neutral {
+  background-color: #EFF6FF;
+  color: #1C51B9;
+}
+
+.banner .text{
+  display: flex;
+  flex-direction: column;
+  gap: .75em;
+}
