@@ -7,6 +7,7 @@
 body {
   font-family: Arial, sans-serif;
   font-size: 16px;
+  background-color: #e3e6eb;
 }
 
 .badge {
@@ -103,4 +104,39 @@ body {
   display: flex;
   flex-direction: column;
   gap: .75em;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5em;
+  border-radius: .5em;
+  background-color: #FFFFFF;
+  margin: 2em;
+  max-width: 400px;
+  color: #6B7280;
+  position: relative;
+}
+
+.card:hover,
+.card:focus {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h2{
+  font-weight: 500;
+  font-size: 1.1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  color: #111827;
+}
+
+.card img{
+  width: 3em;
+  height: 3em;
+  position: absolute;
+  top: -1em;
 }
