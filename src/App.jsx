@@ -1,10 +1,11 @@
 import Badge from './components/Badge.jsx';
 import Banner from './components/Banner.jsx';
 import Card from './components/Card.jsx';
-import TestimonialsDesktop from './TestimonialsDesktop.jsx';
-import image from './TestimonialAssets/Image.png'
-import imageMobile from './TestimonialAssets/ImageMobile.png'
-import TestimonialMobile from './TestimonialsMobile.jsx';
+import TestimonialsDesktop from './components/TestimonialsDesktop.jsx';
+import image from './components/TestimonialAssets/Image.png'
+import imageMobile from './components/TestimonialAssets/ImageMobile.png'
+import TestimonialMobile from './components/TestimonialsMobile.jsx';
+import Tooltip from './components/Tooltip.jsx';
 
 export default function App() {
 
@@ -54,13 +55,29 @@ export default function App() {
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
       </TestimonialMobile> */}
 
-      <TestimonialMobile name={'May Andersons'} company={'Workcation'} title={'CTO'}>
+      {/* <TestimonialMobile name={'May Andersons'} company={'Workcation'} title={'CTO'}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
       </TestimonialMobile>
 
         <TestimonialMobile>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
-      </TestimonialMobile>
+      </TestimonialMobile> */}
+
+      <Tooltip>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip color='blue'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip color='pink'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip color='green'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip mode='light'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip mode='light' color='blue'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip mode='light' color='pink'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
+
+      <Tooltip mode='light' color='green'>Lorem ipsum dolor sit amet consectetur adipisicing elit oluptatum tenetur.</Tooltip>
     </>
   )
 }
