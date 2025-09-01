@@ -396,6 +396,71 @@ body {
   color: #3C8C4E;
 }
 
+/* TOAST POPUPS */
+.toast-popup-container {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+.toast-popup {
+  display: flex;
+  height: 78px;
+  width: 384px;
+  border-radius: .5em;
+  padding: 1em;
+  margin: 1em;
+  background-color: #ECFDF5;
+  gap: 1em;
+  color: #047857;
+}
+
+.toast-popup > img {
+  width: 18px;
+  height: 18px;
+}
+
+.toast-popup > div {
+  display: flex;
+  flex-direction: column;
+  gap: .25em;
+}
+
+.toast-popup .title {
+  font-weight: 700;
+  color: #065F46;
+}
+
+.toast-popup.error .title {
+  color: #92400E;
+}
+
+.toast-popup.error{
+  color: #B45309;
+  background-color: #FEF2F2;
+}
+
+.toast-popup.warning .title {
+  color: #92400E;
+}
+
+.toast-popup.warning{
+  color: #B45309;
+  background-color: #FFFBEB;
+}
+
+.toast-popup.information .title {
+  color: #1E40AF;
+}
+
+.toast-popup.information{
+  color: #1C51B9;
+  background-color: #EFF6FF;
+}
+
 
 
 @media (min-width: 500px) {
