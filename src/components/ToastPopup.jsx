@@ -29,7 +29,7 @@ export default function ToastPopup({type="success"}) {
                 toast.style.display = 'none';
             });
         }, 500);
-    }, 3000);
+    }, 4000);
     
     return (
             <div className={`toast-popup ${type}`}>

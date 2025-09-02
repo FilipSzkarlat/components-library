@@ -1,3 +1,4 @@
+/* GENERAL */
 *{
   margin: 0;
   padding: 0;
@@ -8,6 +9,39 @@ body {
   font-family: Arial, sans-serif;
   font-size: 16px;
   background-color: #e3e6eb;
+  margin-bottom: 5em;
+}
+
+.main-title{
+  font-family: 'Permanent Marker', cursive;
+  font-size: 3em;
+}
+
+.main-text{
+  font-family: 'Karla', sans-serif;
+  font-size: 1.5em;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5em;
+  text-shadow: #F9FAFB 0 0 10px;
+}
+
+.main-title,
+.main-text {
+  text-align: center;
+  margin-top: 1em;
+  color: #111827;
+}
+
+/* BADGE */
+.badge-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  margin: 2em;
 }
 
 .badge {
@@ -25,7 +59,7 @@ body {
   border-radius: .25em;
 }
 
-.badge.round {
+.badge.pill {
   border-radius: 1em;
 }
 
@@ -64,12 +98,21 @@ body {
   color: #9D174D;
 }
 
+/* Banner */
+.banner-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
 .banner {
   padding: .75em 1.5em;
   gap: .75em;
   border-radius: .5em;
   margin: 2em;
   display: flex;
+  min-width: 40%;
 }
 
 .banner .icon {
@@ -104,6 +147,16 @@ body {
   display: flex;
   flex-direction: column;
   gap: .75em;
+}
+
+/* Card */
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  margin: 2em;
 }
 
 .card{
@@ -141,6 +194,7 @@ body {
   top: -1em;
 }
 
+/* Testimonial */
 .testimonial{
   display: flex;
   align-items: center;
@@ -311,6 +365,14 @@ body {
   gap: .5em;
   text-shadow: #F9FAFB 0 0 10px;
   z-index: 1;
+}
+
+/* Tooltip */
+.main-tooltip-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 2em;
 }
 
 .tooltip-container {
