@@ -2,7 +2,7 @@ import Badge from './components/Badge.jsx';
 import Banner from './components/Banner.jsx';
 import Card from './components/Card.jsx';
 import TestimonialsDesktop from './components/TestimonialsDesktop.jsx';
-import image from './components/TestimonialAssets/Image.png'
+import imageExample from './components/TestimonialAssets/ImageExample.png'
 import imageMobile from './components/TestimonialAssets/ImageMobile.png'
 import TestimonialMobile from './components/TestimonialsMobile.jsx';
 import Tooltip from './components/Tooltip.jsx';
@@ -76,7 +76,7 @@ export default function App() {
 
       <h2 className='main-title'>Testimonials</h2>
       <p className='main-text'>You can use the TestimonialsDesktop component for desktop and the TestimonialMobile component for mobile. You can pass a picture, name, company and title as props. You can also use the components without any props.</p>
-      <TestimonialsDesktop picture={image} name={'May Andersons'} company={'Workcation'} title={'CTO'}>
+      <TestimonialsDesktop picture={imageExample} name={'May Andersons'} company={'Workcation'} title={'CTO'}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. 
       </TestimonialsDesktop>
 
